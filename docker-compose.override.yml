@@ -6,6 +6,6 @@ services:
     environment:
       RACK_ENV: "development"
       RAILS_ENV: "development"
-      DATABASE_URL: "postgres://postgres@database/klaxon"
+      DATABASE_URL: "postgres://postgres@database/radar"
       SECRET_KEY_BASE: "secret_key_base"
-      ADMIN_EMAILS: "admin@news.org"
+      ADMIN_EMAILS: "grant@cham-tech.com"
