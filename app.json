@@ -1,9 +1,9 @@
 {
-  "name": "Klaxon",
-  "description": "Watch webpages for newsworthy changes.",
+  "name": "Radar",
+  "description": "Watch webpages/directories for changes.",
   "keywords": [],
-  "website": "https://github.com/themarshallproject/klaxon",
-  "repository": "https://github.com/themarshallproject/klaxon",
+  "website": "",
+  "repository": "https://github.com/gforce701/radar/develp",
   "success_url": "/",
   "scripts": {
     "postdeploy": "bash ./postdeploy.sh"
@@ -28,7 +28,7 @@
     }
   },
   "addons": [
-    "heroku-postgresql:hobby-dev",
+    "heroku-postgresql:hobby-basic",
     "sendgrid:starter",
     "scheduler:standard"
   ],
