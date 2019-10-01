@@ -7,7 +7,7 @@
     </div>
     <div class="row">
       <div class="col-md-6">
-        <p class="lead">Below are two versions of <b><%= @page&.name || @page&.url %></b> which has changed <%= @page.num_changes %> times since <%= @page.created_at.strftime("%A, %B %d, %Y") %> when <%= @page&.user&.display_name || 'someone' %> began watching it.</p>
+        <p class="lead">Below are two versions of <b><%= @page&.name || @page&.url %></b> which has changed <%= @page.num_changes %> times since <%= @page.created_at.strftime("%m-%d-%y at %I:%M") %> when <%= @page&.user&.display_name || 'someone' %> began watching it.</p>
       </div>
       <div class="col-md-3">
         <!-- negative space -->
@@ -25,7 +25,7 @@
   <div class="container klax-spacer-md">
     <div class="row klax-spacer-md">
       <div class="col-md-12">
-        <h4>Snapshots from <code class="klax-code-after"><%= @after.created_at.strftime("%A, %B %d, %Y at %H:%M") %></code> and <code class="klax-code-before"><%= @before.updated_at.strftime("%A, %B %d, %Y at %H:%M") %></code></h4>
+        <h4>Snapshots from <code class="klax-code-after"><%= @after.created_at.strftime("%m-%d-%y at %I:%M") %></code> and <code class="klax-code-before"><%= @before.updated_at.strftime("%m-%d-%y at %I:%M") %></code></h4>
       </div>
     </div>
     <%= simple_form_for(@change, html: { class: 'horizontal-form' }) do |f| %>
@@ -60,15 +60,15 @@
     <div class="row">
       <div class="col-md-4 klax-spacer-md">
         <h2><%= @page.num_changes %></h2>
-        <p class="lead">total times the item has changed since you started watching it, which was <%= @page.created_at.strftime("%A, %B %d, %Y at %H:%M") %>.</p>
+        <p class="lead">total times the item has changed since you started watching it, which was <%= @page.created_at.strftime("%m-%d-%y at %I:%M") %>.</p>
       </div>
       <div class="col-md-4 klax-spacer-md">
         <h2><%= distance_of_time_in_words(@page.calculate_median(@page.snapshot_time_deltas)) %></h2>
-        <p class="lead">amount of time, roughly, between each change. We anticipate the next change will occur on <%= @page.predicted_snapshot.strftime("%A, %B %d, %Y at %H:%M") %>.</p>
+        <p class="lead">amount of time, roughly, between each change. We anticipate the next change will occur on <%= @page.predicted_snapshot.strftime("%m-%d-%y at %I:%M") %>.</p>
       </div>
       <div class="col-md-4 klax-spacer-md">
         <h2><%= time_ago_in_words @page.page_snapshots.last.created_at %></h2>
-        <p class="lead">since the last change was captured at <%= @page.page_snapshots.last.created_at.strftime("%A, %B %d, %Y at %H:%M") %></p>
+        <p class="lead">since the last change was captured at <%= @page.page_snapshots.last.created_at.strftime("%m-%d-%y at %I:%M") %></p>
       </div>
     </div>
   </div><!-- /.container -->
