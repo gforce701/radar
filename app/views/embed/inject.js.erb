@@ -10,7 +10,7 @@
   }
 
   if (window._klaxonInject === true) {
-    alert("The Klaxon bookmarklet already injected on this page.");
+    alert("The Radar bookmarklet already injected on this page.");
     return;
   } else {
     window._klaxonInject = true;
@@ -129,7 +129,7 @@
       iframe.parentNode.removeChild(iframe);
       var style = document.getElementById('klaxon-css-inject');
       style.parentNode.removeChild(style);
-      console.log("Closed Klaxon Bookmarklet")
+      console.log("Closed Radar Bookmarklet")
       window._klaxonInject = false;
     } else if (event.data.type == 'update_saved_selector') {
       savedSelector = event.data.selector;
