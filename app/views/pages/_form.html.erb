@@ -50,7 +50,7 @@
         <p>Which users added to Radar should get an email when this item changes?</p>
 
         <% @users.each do |user| %>
-          <div class="checkbox" checked>
+          <div class="checkbox">
             <label>
               <%= check_box_tag "page[subscriptions][]", "user:#{user.id}", user.is_subscribed_to?(@page) %>
               <%= user.display_name %>
