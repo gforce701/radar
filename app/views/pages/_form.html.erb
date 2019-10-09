@@ -52,7 +52,7 @@
         <% @users.each do |user| %>
           <div class="checkbox" checked>
             <label>
-              <%= check_box_tag "page[subscriptions][x]", "user:#{user.id}", user.is_subscribed_to?(@page) %>
+              <%= check_box_tag "page[subscriptions][]", "user:#{user.id}", user.is_subscribed_to?(@page) %>
               <%= user.display_name %>
             </label>
           </div>
@@ -73,7 +73,7 @@
           <% @slack_integrations.each do |slack| %>
             <div class="checkbox">
               <label>
-                <%= check_box_tag "page[subscriptions][x]", "slack:#{slack.id}", slack.is_subscribed_to?(@page) %>
+                <%= check_box_tag "page[subscriptions][]", "slack:#{slack.id}", slack.is_subscribed_to?(@page) %>
                 <%= slack.channel %>
               </label>
             </div>
