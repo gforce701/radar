@@ -4,12 +4,12 @@
   <div class="container">
     <div class="jumbotron">
       <% if @current_user.pages.empty? %>
-        <h1 class="klax-no-border" style="padding-top: 0;">Watch Your First Item</h1>
+        <h4 class="klax-no-border" style="padding-top: 0;">Watch Your First Item</h4>
       <% else %>
-        <h3 class="klax-no-border" style="padding-top: 0;">Bookmarklet</h3>
+        <h4 class="klax-no-border" style="padding-top: 0;">Bookmarklet</h4>
       <% end %>
-      <p>To watch a web page, drag the “Add to Radar” button below to your bookmark bar. When on the page you want to watch, click the bookmark. <!-- To watch a file such as an image or document, <a href="#">enter it manually</a> instead.--></p>
-      <a class="btn btn-lg" href="<%= bookmarklet_js %>" role="button">Add to Radar</a>
+      <p>To watch a web page, drag the “Add to Radar” button below to your bookmark bar. <!-- To watch a file such as an image or document, <a href="#">enter it manually</a> instead.--></p>
+      <a class="btn btn-sm" href="<%= bookmarklet_js %>" role="button">Add to Radar</a>
     </div>
   </div>
 </div>
