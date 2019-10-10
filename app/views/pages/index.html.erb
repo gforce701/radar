@@ -25,7 +25,8 @@
     <table class="table">
       <thead>
         <tr>
-          <th>Created</th>
+          <th>Added</th>
+          <th>Link</th>
           <th>Project</th>
           <th>Source</th>
           <th></th>
@@ -37,6 +38,7 @@
         <% @pages.each do |page| %>
         <tr>
           <td><%= page.created_at.strftime("%m/%d/%y") %></td>
+          <td><%= link_to "View Page", @page.url, class: "klax-button", style: "margin-bottom: 50px;" %></td>
           <td><%= page.name %></td>
           <td><%= page.domain.truncate(20) %></td>
           <td><% if page.page_snapshots.count > 1 %><%= link_to "Latest Change", latest_change_page_path(page), class: "btn btn-default btn-block" %><% end %></td>
