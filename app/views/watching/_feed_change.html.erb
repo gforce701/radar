@@ -12,12 +12,9 @@
     </div>
     <div class="col-md-3">
         <p><small>
-          Created by <b><%= change.after.page.user.display_name rescue '?' %></b>
-        </small></p>
-        <p><small>
-          <%= link_to "Go to Ping", change.after.page.url %>
+          <%= link_to "Source", change.after.page.url, target: :_blank %>
           &nbsp;&nbsp;&nbsp;
-          <%= link_to "Edit", edit_page_path(change.after.page) %>
+          <%= link_to "Edit", edit_page_path(change.after.page), target: :_blank %>
         </small></p>
     </div>
   </div>
