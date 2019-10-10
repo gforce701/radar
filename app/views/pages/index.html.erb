@@ -26,10 +26,9 @@
       <thead>
         <tr>
           <th>Created</th>
-          <th>Name</th>
-          <th>Site</th>
-          <th>Selector</th>
-
+          <th>Project</th>
+          <th>Source</th>
+          <th>Trigger</th>
           <th></th>
           <th></th>
           <th></th>
@@ -39,9 +38,9 @@
         <% @pages.each do |page| %>
         <tr>
           <td><%= page.created_at.strftime("%m/%d/%Y at %I:%M%p") %></td>
-          <td><%= page.name %></td>
-          <td><%= page.domain.truncate(40) %></td>
-          <td><code><%= page.css_selector %></code></td>
+          <td><%= page.name.truncate(30) %></td>
+          <td><%= page.domain.truncate(20) %></td>
+          <td><code><%= page.css_selector.truncate(10) %></code></td>
           <td><% if page.page_snapshots.count > 1 %><%= link_to "Latest Change", latest_change_page_path(page), class: "btn btn-default btn-block" %><% end %></td>
           <td><%= link_to 'Edit', edit_page_path(page), class: "btn btn-default btn-block" %></td>
           <td><%= link_to 'Delete', page, method: :delete, data: { confirm: 'Are you sure? This will delete all snapshots and changes associated with this page. There is no undo.' }, class: "btn btn-default btn-block" %></td>
