@@ -6,7 +6,7 @@ class UserMailer < ApplicationMailer
     @url = token_session_url(token: token)
     @user = user
 
-    mail(to: @user.email, subject: 'Log in to Klaxon')
+    mail(to: @user.email, subject: 'Log in to i2b-Radar')
   end
 
   def welcome_email(user: nil, invited_by: nil)
@@ -15,7 +15,7 @@ class UserMailer < ApplicationMailer
     @url = token_session_url(token: token)
     @user = user
 
-    mail(to: @user.email, subject: 'Welcome to Klaxon!')
+    mail(to: @user.email, subject: 'Welcome to i2b-Radar!')
   end
 
 end
