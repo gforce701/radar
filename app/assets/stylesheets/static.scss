@@ -63,11 +63,11 @@ h3 {font-size: 2.25em;}
 h4 {font-size: 1.5em;}
 
 .table > thead > tr > th {
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #1d44b6;
 }
 
 .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
-  border-top: 1px solid #000;
+  border-top: 1px solid #1d44b6;
   vertical-align: center;
   // padding: 8px 0;
   padding-left: 0;
@@ -120,7 +120,7 @@ table tbody tr td:last-child, table thead tr td:last-child  {
 
 .dropdown a {
   border: none;
-  color: #1d44b6 !important;
+  color: #000 !important;
 }
 
 .nav .dropdown .dropdown-menu {
