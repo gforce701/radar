@@ -47,7 +47,7 @@ a:not(.btn):hover, a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  border-top: 0.2em solid #f7ae1d;
+  border-top: 0.2em solid #000;
   padding-top: 10px;
 }
 
@@ -63,11 +63,11 @@ h3 {font-size: 2.25em;}
 h4 {font-size: 1.5em;}
 
 .table > thead > tr > th {
-  border-bottom: 2px solid #f7ae1d;
+  border-bottom: 2px solid #000;
 }
 
 .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
-  border-top: 1px solid #f7ae1d;
+  border-top: 1px solid #000;
   vertical-align: center;
   // padding: 8px 0;
   padding-left: 0;
@@ -81,7 +81,7 @@ table tbody tr td:last-child, table thead tr td:last-child  {
 
 .form-control {
   border-radius: 0 !important;
-  border: 1px solid #f7ae1d;
+  border: 1px solid #000;
   box-shadow: none;
   color: #1f7ae1d;
 }
@@ -92,9 +92,9 @@ table tbody tr td:last-child, table thead tr td:last-child  {
 
 .btn {
   border-radius: 0 !important;
-  border: 1px solid #f7ae1d;
+  border: 1px solid #000;
   color: #f7ae1d;
-  border-color: #f7ae1d !important;
+  border-color: #000 !important;
 }
 
 .btn:hover {
@@ -113,7 +113,7 @@ table tbody tr td:last-child, table thead tr td:last-child  {
 }
 
 *:focus {
-  border-color: #f7ae1d !important;
+  border-color: #000!important;
   box-shadow: none !important;
   outline: none !important;
 }
