@@ -294,20 +294,20 @@ small {
 .klax-hero {
   margin-top: -50px;
   padding-top: 55px;
-  background-color: #f7ae1d;
+  background-color: #fff;
   height: 100vh;
   min-height: 900px;
-  color: #fff;
+  color: #000;
   .form-group-lg .form-control {
     height: 45px;
     background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff !important;
+    color: #000;
+    border: 1px solid #1d44b6 !important;
   }
   .btn {
     background-color: transparent;
     color: #fff;
-    border: 1px solid #fff !important;
+    border: 1px solid #1d44b6 !important;
   }
   .btn:hover {
     background-color: white;
