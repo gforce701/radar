@@ -39,7 +39,7 @@
           <td><%= link_to page.name, page.url, class: "btn btn-default btn-block", target: :_blank %></td>
           <td><%= link_to page.domain.truncate(20), edit_page_path(page), class: "btn btn-default btn-block", target: :_blank %></td>
           <td><% if page.page_snapshots.count > 1 %><%= link_to "Diff", latest_change_page_path(page), class: "btn btn-default btn-block" %><% end %></td>
-          <td><%= link_to 'Delete', page, method: :delete, class: "btn btn-default btn-block" %></td>
+          <td>Hello</td>
         </tr>
         <% end %>
       </tbody>
