@@ -17,12 +17,7 @@
         <div class="col-md-3">
           <%= submit_tag "Compare", class: "btn btn-default btn-lg btn-block" %>
         </div>
-        <div class="col-md-3">
-          <%= submit_tag "Compare", class: "btn btn-default btn-lg btn-block" %>
-        </div>
-        <div class="col-md-3">
-          <%= link_to 'Delete', page, method: :delete, class: "btn btn-default btn-block" %>
-      </div></div>
+      </div>
     </div><!-- /.container -->
   </div>
 
@@ -83,7 +78,6 @@
 <% end %><!-- form_tag -->
 
 <script>
-
   $(document).ready(function() {
     $(".klax-js-snapshot-before[data-index='0']").attr("disabled","");
     $(".klax-js-snapshot-before[data-index='1']").click();
@@ -105,5 +99,4 @@
       });
     });
   });
-
 </script>
