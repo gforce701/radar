@@ -4,7 +4,7 @@
 
   <% # TODO: refactor %>
   <% first_use = Page.order('created_at DESC').last.created_at.strftime("%m-%d-%y at %I:%M") rescue '??' %>
-  <p class="lead klax-spacer-sm">total changes since you first started using Blackhole which was <%= first_use %>.</p>
+  <p class="lead klax-spacer-sm">total changes since you first started using Blaqhole which was <%= first_use %>.</p>
 
   <h2><%= Page.count %></h2>
   <p class="lead klax-spacer-sm">pages being watched for changes.</p>
