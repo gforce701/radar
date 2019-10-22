@@ -25,7 +25,7 @@ class AppSetting < ApplicationRecord
     if ENV['MAILER_FROM_ADDRESS'].present?
       ENV['MAILER_FROM_ADDRESS']
     else
-      'i2b-Radar <no-reply@bxhub.com>'
+      'blaqhole <no-reply@bxhub.com>'
     end
   end
 
