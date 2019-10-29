@@ -15,6 +15,8 @@
           <%= link_to "Source", change.after.page.url, target: :_blank %>
           &nbsp;&nbsp;&nbsp;
           <%= link_to "Edit", edit_page_path(change.after.page), target: :_blank %>
+          &nbsp;&nbsp;&nbsp;
+          <%= link_to 'Delete', page, method: :delete, class: "btn btn-default btn-block" %>
         </small></p>
     </div>
   </div>
